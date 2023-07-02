@@ -6,7 +6,8 @@ from ultralytics import YOLO
 # Load a model
 model = YOLO('yolov8n.pt')  # load an official model
 
-cap = cv2.VideoCapture(0)
+# cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture('videoplayback.webm')
 # Loop over frames from the video capture device
 while True:
     # Read a frame from the video capture device
